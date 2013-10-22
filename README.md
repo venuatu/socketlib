@@ -28,9 +28,9 @@ Either public domain or UNLICENSE, whichever is better for you.
 
 See:
 
--   [[httpclient.cpp]]
--   [[echoserver.cpp]]
--   [[echoclient.cpp]]
+-   [httpclient.cpp](httpclient.cpp)
+-   [echoserver.cpp](echoserver.cpp)
+-   [echoclient.cpp](echoclient.cpp)
 
 ## TODO
 
