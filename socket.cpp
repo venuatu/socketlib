@@ -242,10 +242,3 @@ Socket ServerSocket::accept()
 	return Socket(newSock, inet_ntoa(in.sin_addr));
 }
 
-void ServerSocket::serveForever(void (*callback)(Socket sock))
-{
-	while (true)
-	{
-		callback(accept());
-	}
-}
