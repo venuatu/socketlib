@@ -26,9 +26,9 @@ int main (int argc, char** argv)
     if (argc > 1)
         port = atoi(argv[1]);
 
+    ServerSocket server = create_serverSocket(port);
     cout << "listening on " << port << endl;
     signal(SIGCHLD, SIG_IGN);
-    ServerSocket server = create_serverSocket(port);
 
     while(true)
     {
