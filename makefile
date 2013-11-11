@@ -1,5 +1,5 @@
 CXX=g++
-CFLAGS=-Wall -pedantic
+CXXFLAGS=-Wall -pedantic -g
 LDFLAGS=
 
 ## Solaris libraries
@@ -9,6 +9,7 @@ all: httpclient echoserver echoclient
 
 clean:
 	rm -f *.o httpclient echoserver echoclient
+	rm -rf *.dSYM/
 
 socket.cpp.o: socket.cpp socket.h
 	$(CXX) $(CXXFLAGS) -c socket.cpp -o socket.cpp.o
